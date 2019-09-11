@@ -1,0 +1,66 @@
+<html>
+
+<head>
+	<title>International Business Resource Directory</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		body{
+			background-color:#000020;
+			font-family:Arial;
+			color:white;
+		}
+		h1{
+			text-align:center;
+		}
+		img{
+			position:absolute;
+			width:100%;
+			height:100%;
+		}
+		form{
+			position:absolute;
+			display:inline-grid;
+			background-color:#000020;
+			padding:2em;
+			margin:10em 0 0 34em;
+			border-radius:5px;
+			text-align:center;
+		}
+		input{
+			background-color:#000030;
+			border-radius:5px;
+			padding:0.5em;
+			color:white;
+			font-family:Arial;
+		}
+		input:hover{
+		  background-color:#000050;
+		}
+		select{
+		  padding:0.5em;
+			background-color:#000040;
+			color:white;
+		}
+	</style>
+</head>
+
+<body>
+
+<h1>International Business Resource Directory</h1>
+<img src="worldmap.jpg" />
+<form action="submit" method="post">
+
+	<input type="text" placeholder="Name"/>
+	<input type="email" placeholder="Email"/>
+	<input type="text" placeholder="Country"/>
+	<select placeholder="Product">
+		<option>Clothing</option>
+		<option>Electronics</option>
+		<option>Health & Nutrition</option>
+		<option selected>Choose Product Category</option>
+	</select>
+	<input type="submit" value="Subscribe">
+</form>
+</body>
+
+</html>
