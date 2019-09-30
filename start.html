@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>International Busisness Resource Directory</title>
+    <title>Internationl Business Resource Directory</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,112 +20,183 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->
-    <!--<link rel="stylesheet" href="assets/plugins/prism/prism.css">-->
     <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
-
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
-<body class="">
+<body class="landing-page">
+
+
     <div class="page-wrapper">
+
         <!-- ******Header****** -->
-        <header id="header" class="header">
+        <header class="header text-center">
             <div class="container">
                 <div class="branding">
                     <h1 class="logo">
-                        <a href="index.html">
-                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
-                            <span class="text-highlight">IBR<span><span class="text-bold">D</span>
-                        </a>
+                        <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                        <span class="text-highlight">IBR</span><span class="text-bold">D</span>
                     </h1>
-
                 </div>
                 <!--//branding-->
-
-                <!--
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="indexExporting guide.html">Home</a></li>
-                    <li class="breadcrumb-item active">Exporting guide</li>
-                </ol>-->
-
-                <!--
-                <div class="top-search-box">
-	                 <form class="form-inline search-form justify-content-center" action="" method="get">
-	            
-			            <input type="text" placeholder="Search the Directory..." name="search" class="form-control search-input">
-			            
-			            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-			            
-			        </form>
+                <div class="tagline">
+                    <p>International Busisness Resource Directory</p>
                 </div>
-                -->
+                <!--//tagline-->
+
+
 
             </div>
             <!--//container-->
         </header>
         <!--//header-->
-        <div class="doc-wrapper">
-            <div class="container">
-                <div id="doc-header" class="doc-header text-center">
-                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Exporting guide</h1>
-                    <div class="meta"><i class="far fa-clock"></i> Last updated: September 24th, 2019</div>
-                </div>
-                <!--//doc-header-->
-                <div class="doc-body row">
-                    <div class="doc-content col-md-9 col-12 order-1">
-                        <div class="content-inner">
 
-                            <section id="installation-section" class="doc-section">
-                                <form action="submit" method="post" netlify>
-                                    <input type="text" placeholder="Name" />
-                                    <input type="email" placeholder="Email" />
-                                    <input type="text" placeholder="Country" />
-                                    <select placeholder="Product">
-                                        <option>Clothing</option>
-                                        <option>Electronics</option>
-                                        <option>Health & Nutrition</option>
-                                        <option selected>Choose Product Category</option>
-                                    </select>
-                                    <input type="submit" value="Subscribe">
-                                </form>
+        <section class="cards-section text-center">
+            <div class="container">
+                <div class="intro">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec imperdiet turpis. Curabitur
+                        aliquet pulvinar ultrices. Etiam at posuere leo.</p>
+                    <form class="mx-auto" style="width:300px;" name="register" action="steps.html" method="post" netlify
+                        autocomplete="on">
+
+                        <div class="form-group">
+                            <label class="sr-only" for="country">Country</label>
+                            <select class="form-control" name="country" id="country" required>
+                                <option selected>Select Origin Country</option>
+                                <option value="Clothing">Ghana</option>
+                                <option value="Electronics">Mexico</option>
+                                <option value="Health & Nutrition">CapeTown</option>
+
+                            </select>
                         </div>
-                        <!--//section-block-->
+                        <div class="form-group">
+                            <label class="sr-only" for="product">Product</label>
+                            <select class="form-control" name="product" id="produc" required>
+                                <option selected>Select Product Category</option>
+                                <option value="Clothing">Clothing</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Health & Nutrition">Health & Nutrition</option>
 
-                    </div>
-                    <!--//doc-body-->
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-cta">Next <span>→</span></button>
+
+                    </form>
+                    <!--//cta-container-->
                 </div>
-                <!--//container-->
-            </div>
-            <!--//doc-wrapper-->
+                <!--//intro-->
+                <!--
+                <div id="cards-wrapper" class="cards-wrapper row">
+                    <div class="item item-green col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <i class="icon fa fa-paper-plane"></i>
+                            </div>
+                            
+                            <h3 class="title">Quick Start</h3>
+                            <p class="intro">Demo example, consectetuer adipiscing elit</p>
+                            <a class="link" href="start.html"><span></span></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="item item-pink item-2 col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" class="icon icon_puzzle_alt"></span>
+                            </div>
+                            
+                            <h3 class="title">Components</h3>
+                            <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                            <a class="link" href="components.html"><span></span></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="item item-blue col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" class="icon icon_datareport_alt"></span>
+                            </div>
+                            
+                            <h3 class="title">Charts</h3>
+                            <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                            <a class="link" href="charts.html"><span></span></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="item item-purple col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" class="icon icon_lifesaver"></span>
+                            </div>
+                            
+                            <h3 class="title">FAQs</h3>
+                            <p class="intro">Layout for FAQ page. Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                elit</p>
+                            <a class="link" href="faqs.html"><span></span></a>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="item item-primary col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" class="icon icon_genius"></span>
+                            </div>
+                            
+                            <h3 class="title">Showcase</h3>
+                            <p class="intro">Layout for showcase page. Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit </p>
+                            <a class="link" href="showcase.html"><span></span></a>
+                        </div>
+                        
+                    </div>
 
+                    <div class="item item-orange col-lg-4 col-6">
+                        <div class="item-inner">
+                            <div class="icon-holder">
+                                <span aria-hidden="true" class="icon icon_gift"></span>
+                            </div>
+                            
+                            <h3 class="title">License &amp; Credits</h3>
+                            <p class="intro">Layout for license &amp; credits page. Consectetuer adipiscing elit.</p>
+                            <a class="link" href="license.html"><span></span></a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                //cards-->
 
-
-        </div>
-        <!--//page-wrapper-->
-
-        <footer id="footer" class="footer text-center">
-            <div class="container">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
-                        href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for
-                    developers</small>
 
             </div>
             <!--//container-->
-        </footer>
-        <!--//footer-->
+        </section>
+        <!--//cards-section-->
+    </div>
+    <!--//page-wrapper-->
+
+    <footer class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
+                    href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+
+        </div>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
 
 
-        <!-- Main Javascript -->
-        <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <!--<script type="text/javascript" src="assets/plugins/prism/prism.js"></script> -->
-        <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
-        <script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
-        <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>
 

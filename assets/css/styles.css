@@ -21,6 +21,10 @@ body {
   height: 100%;
 }
 
+small {
+  font-size: 60%;
+}
+
 .landing-page body {
   font-size: 16px;
 }
@@ -537,6 +541,10 @@ select {
   color: #40babd;
   margin-top: 0;
   font-size: 36px;
+}
+
+.doc-title span {
+  color: #494d55;
 }
 
 .body-green .doc-header .doc-title {
