@@ -28,21 +28,6 @@
 
 <body class="landing-page">
 
-    <!-- GITHUB BUTTON JS -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-    <!--FACEBOOK LIKE BUTTON JAVASCRIPT SDK-->
-    <div id="fb-root"></div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
 
     <div class="page-wrapper">
 
@@ -60,53 +45,7 @@
                     <p>International Busisness Resource Directory</p>
                 </div>
                 <!--//tagline-->
-                <!-- //Search form
-                <div class="main-search-box pt-3 pb-4 d-inline-block">
-                    <form class="form-inline search-form justify-content-center" action="" method="get">
 
-                        <input type="text" placeholder="Enter search terms..." name="search"
-                            class="form-control search-input">
-
-                        <button type="submit" class="btn search-btn" value="Search"><i
-                                class="fas fa-search"></i></button>
-
-                    </form>
-                </div>
-            -->
-                <!-- SOCIAL SHARE
-                <div class="social-container">
-                    <!--
-                     Replace with your Github Button 
-                    <div class="github-btn mb-2">
-                        <a class="github-button" href="https://github.com/xriley/PrettyDocs-Theme" data-size="large"
-                            aria-label="Star xriley/PrettyDocs-Theme on GitHub">Star</a>
-                        <a class="github-button" href="https://github.com/xriley" data-size="large"
-                            aria-label="Follow @xriley on GitHub">Follow @xriley</a>
-                    </div>
-                    
-                    
-                    <div class="twitter-tweet">
-                        <a href="https://twitter.com/share" class="twitter-share-button"
-                            data-text="What a great app! IBRD - International Business Resource Directory"
-                            data-via="ibrd">Tweet</a>
-                        <script>
-                            ! function (d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0],
-                                    p = /^http:/.test(d.location) ? 'http' : 'https';
-                                if (!d.getElementById(id)) {
-                                    js = d.createElement(s);
-                                    js.id = id;
-                                    js.src = p + '://platform.twitter.com/widgets.js';
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }
-                            }(document, 'script', 'twitter-wjs');
-                        </script>
-                    </div>
-                    <div class="fb-like" data-href="https://ibrd.com" data-layout="button_count" data-action="like"
-                        data-show-faces="false" data-share="false"></div>
-                    
-                </div>
-                <!--//social-container-->
 
 
             </div>
@@ -119,10 +58,32 @@
                 <div class="intro">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec imperdiet turpis. Curabitur
                         aliquet pulvinar ultrices. Etiam at posuere leo.</p>
-                    <div class="cta-container">
-                        <a class="btn btn-primary btn-cta" href="start.html" target="_self">GET STARTED
-                            <span>→</span></a>
-                    </div>
+                    <form class="mx-auto" style="width:300px;" name="register" action="steps.html" method="post" netlify
+                        autocomplete="on">
+
+                        <div class="form-group">
+                            <label class="sr-only" for="country">Country</label>
+                            <select class="form-control" name="country" id="country" required>
+                                <option selected>Select Origin Country</option>
+                                <option value="Clothing">Ghana</option>
+                                <option value="Electronics">Mexico</option>
+                                <option value="Health & Nutrition">CapeTown</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="product">Product</label>
+                            <select class="form-control" name="product" id="produc" required>
+                                <option selected>Select Product Category</option>
+                                <option value="Clothing">Clothing</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Health & Nutrition">Health & Nutrition</option>
+
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-cta">Next <span>→</span></button>
+
+                    </form>
                     <!--//cta-container-->
                 </div>
                 <!--//intro-->
