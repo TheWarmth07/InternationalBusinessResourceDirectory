@@ -1,4 +1,12 @@
-$(document).ready(function() {
+
+new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue.js!'
+    }
+  })
+  
+  $(document).ready(function() {
 	
     /* ===== Stickyfill ===== */
     /* Ref: https://github.com/wilddeer/stickyfill */

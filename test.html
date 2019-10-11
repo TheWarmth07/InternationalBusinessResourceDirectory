@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Demo</title>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+  <div id="example-vertical">
+    <h3>Keyboard</h3>
+    <section>
+      <p>Try the keyboard navigation by clicking arrow left or right!</p>
+    </section>
+    <h3>Effects</h3>
+    <section>
+      <p>Wonderful transition effects.</p>
+    </section>
+    <h3>Pager</h3>
+    <section>
+      <p>The next and previous buttons help you to navigate through your content.</p>
+    </section>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/jquery-steps/jquery.steps.min.js"></script>
+
+  <script>
+    $("#example-vertical").steps({
+      headerTag: "h3",
+      bodyTag: "section",
+      transitionEffect: "slideLeft",
+      stepsOrientation: "vertical"
+    });
+  </script>
+
+</body>
+
+
+
+</html>

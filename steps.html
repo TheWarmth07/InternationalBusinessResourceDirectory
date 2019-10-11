@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>International Busisness Resource Directory</title>
+    <title>Steps - International Busisness Resource Directory</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -75,10 +75,10 @@
                 <!--//doc-header-->
                 <div class="doc-body row">
                     <div class="doc-content col-md-9 col-12 order-1">
-                        <div class="content-inner">
-
+                        <div id="wizard" class="content-inner">
+                            <h2 class="section-title">Best Country to Export</h2>
                             <section id="step1" class="doc-section">
-                                <h2 class="section-title">Best Country to Export</h2>
+
                                 <div class="section-block">
                                     <h3 class="block-title"></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
@@ -99,9 +99,9 @@
                                 </div>
                                 <!--//section-block-->
                             </section>
-
+                            <h2 class="section-title">Preparing to Export</h2>
                             <section id="step2" class="doc-section">
-                                <h2 class="section-title">Preparing to Export</h2>
+
                                 <div id="step2A" class="section-block">
                                     <h3 class="block-title">know your market</h3>
                                     <ul class="list list-unstyled">
@@ -137,9 +137,9 @@
                                 </div>
                                 <!--//section-block-->
                             </section>
-
+                            <h2 class="section-title">Developing the Export Plan</h2>
                             <section id="step3" class="doc-section">
-                                <h2 class="section-title">Developing the Export Plan</h2>
+
                                 <div id="step3A" class="section-block">
                                     <h3 class="block-title">Identifiying Exports Markets</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
@@ -180,6 +180,7 @@
                         <!--//content-inner-->
                     </div>
                     <!--//doc-content-->
+                    <!--
                     <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
                         <div id="doc-nav" class="doc-nav">
                             <nav id="doc-menu" class="nav doc-menu flex-column sticky">
@@ -198,11 +199,10 @@
                                     <a class="nav-link scrollto" href="#step3B">Duty Costs to Add to your Price</a>
                                 </nav>
                             </nav>
-                            <!--//doc-menu-->
 
                         </div>
-                    </div>
-                    <!--//doc-sidebar-->
+                       
+                    </div>-->
                 </div>
                 <!--//doc-body-->
             </div>
@@ -228,11 +228,20 @@
     <!-- Main Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!--<script type="text/javascript" src="assets/plugins/prism/prism.js"></script> -->
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
     <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-steps/jquery.steps.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script>
+        $("#wizard").steps({
+            headerTag: "h2",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            stepsOrientation: "vertical"
+        });
+    </script>
 
 </body>
 
