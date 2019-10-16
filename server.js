@@ -21,17 +21,17 @@ const app = express()
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-    res.send(database.users)
+    res.send('it is working')
 })
 
-app.post('/signin', (req, res) => {
-    if (req.body.email === database.users[0].email &&
-        req.body.password === database.users[0].password) {
-      res.json('Success!')
-    } else {
-      res.status(400).json('error logging in')
-    }
-    // res.json('Sign in')
+// app.post('/signin', (req, res) => {
+//     if (req.body.email === database.users[0].email &&
+//         req.body.password === database.users[0].password) {
+//       res.json('Success!')
+//     } else {
+//       res.status(400).json('error logging in')
+//     }
+//     // res.json('Sign in')
 })
 
 // The code below is used to register a user to the "users" table
