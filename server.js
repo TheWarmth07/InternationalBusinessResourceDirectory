@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 //       res.status(400).json('error logging in')
 //     }
 //     // res.json('Sign in')
-})
+// })
 
 // The code below is used to register a user to the "users" table
 // It works for postman.
