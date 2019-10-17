@@ -6,10 +6,11 @@ const knex = require('knex')
 const db = knex({
     client: 'pg',
     connection: {
-      host : 'postgresql-crystalline-48910', // Heroku
-      user : 'postgres',
-      password : 'postgres',
-      database : 'business-directory'
+      connectionString : 'process.env.DATABASE_URL', // Heroku
+      ssl: true,
+    //   user : 'postgres',
+    //   password : 'postgres',
+    //   database : 'business-directory'
     }
   });
 
