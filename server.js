@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const knex = require('knex')
 
-// Defining the database constant
+// Defining the database constant "db"
 const db = knex({
     client: 'pg',
     connection: {
@@ -36,7 +36,6 @@ app.get('/', (req, res) => {
 // })
 
 // The code below is used to register a user to the "users" table
-// It works for postman.
 app.post('/register', (req, res) => {
     const {email, name, password} = req.body
     db('users').returning('*').insert({
@@ -50,8 +49,7 @@ app.post('/register', (req, res) => {
     .catch(err => res.status(400).json(err))
 })
 
-// Add a user to the "country" table
-// Works you can use the same for all tables
+// Add a country to the "country" table
 app.post('/country', (req, res) => {
     const {country} = req.body
     db('country').returning('*').insert({
@@ -64,7 +62,7 @@ app.post('/country', (req, res) => {
 })
 
 
-// Add a user to the "product" table
+// Add a product to the "product" table
 app.post('/product', (req, res) => {
     const {product} = req.body
     db('product').returning('*').insert({
@@ -76,7 +74,7 @@ app.post('/product', (req, res) => {
     .catch(err => res.status(400).json(err))
 })
 
-// Add a user to the "information" table
+// Add a country to the "information" table
 app.post('/information', (req, res) => {
     const {best_country} = req.body
     db('information').returning('*').insert({
@@ -88,7 +86,7 @@ app.post('/information', (req, res) => {
     .catch(err => res.status(400).json(err))
 })
 
-// Gets a user id from postman
+// Sends a user id from the users table
 app.get('/profile/:id', (req, res) => {
     const {id} = req.params
     db.select('*').from('users').where({id})
@@ -104,7 +102,6 @@ app.get('/profile/:id', (req, res) => {
 })
 
 // to increment entries column
-// but your entries are null so...
 app.put('/image', (req, res) => {
     const {id} = req.body
     db('users').where('id', '=', id)
