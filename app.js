@@ -45,6 +45,10 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
+app.get("/start",function(req,res){
+    res.render("start");
+})
+
 app.get('/users', function(req, res){
   
 });
