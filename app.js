@@ -60,17 +60,33 @@ app.post('/addUser/', function(req,res){
   var product = req.body.product;
   var exportCountry;
   
-  switch(country){
-    case "Ghana":
+ switch(product){
+    case "Textiles":
+      exportCountry = "United Arab Emirates";
+      break;
+    case "Tea":
+      exportCountry = "Pakistan";
+      break;
+    case "Furniture":
       exportCountry = "USA";
       break;
-    case "Sri Lanka":
+    case "Tropical Fruits":
       exportCountry = "USA";
       break;
+    case "Footwear":
+      exportCountry = "India";
+      break;
+    case "Handicrafts":
+      exportCountry = "USA";
+      break;
+    case "Copra":
+      exportCountry = "Australia"
+      break;
+      
   }
   
   var newUser = {name: name, email: email, country: country, product: product, exportCountry: exportCountry};
-  
+  User.create({newUser});
   res.render('new.ejs',{newUser: newUser});
 });
 
